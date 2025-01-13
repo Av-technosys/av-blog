@@ -1,0 +1,41 @@
+{
+    "kind": "collectionType",
+    "collectionName": "categories",
+    "info": {
+        "singularName": "category",
+        "pluralName": "categories",
+        "displayName": "category"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "slug": {
+            "type": "string",
+            "unique": true,
+            "required": true
+        },
+        "category_image": {
+            "allowedTypes": [
+                "images",
+                "files"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": true
+        },
+        "description": {
+            "type": "text",
+            "required": true
+        },
+        "category_blog": {
+            "type": "richtext",
+            "required": true
+        }
+    }
+}
